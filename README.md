@@ -23,7 +23,8 @@ This site is maintained by saintmichael. You can find contact information on htt
 # DGWiki GitHub Stats
 
 <div style="display: flex; gap: 10px; align-items: center;">
-   <img src="https://img.shields.io/github/last-commit/saintmicha3l/DGWiki" alt="Last Commit Badge" />
+  <img src="https://img.shields.io/github/last-commit/saintmicha3l/DGWiki" alt="Last Commit Badge" />
+  <img src="https://img.shields.io/github/contributors/saintmicha3l/DGWiki" alt="Contributors" />
   <img src="https://img.shields.io/github/stars/saintmicha3l/DGWiki?style=social" alt="Stars on GitHub">
   <img src="https://img.shields.io/github/forks/saintmicha3l/DGWiki?style=social" alt="Forks on GitHub">
   <img src="https://img.shields.io/github/watchers/saintmicha3l/DGWiki.svg" alt="Watchers on GitHub">
