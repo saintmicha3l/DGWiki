@@ -1,0 +1,240 @@
+/* === PURE CRT DOS TERMINAL === */
+
+/* Root colors */
+:root {
+  --bg: #000000;
+  --text: #00ff00;
+  --bold-text: #00ff00; /* Bright green for bold Markdown */
+  --muted: #007700;
+  --cursor: #00ff00;
+  --mono: 'Courier New', Courier, monospace;
+}
+
+/* Global box-sizing and body styles */
+* { box-sizing: border-box; }
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--mono);
+  font-size: 16px;
+  line-height: 1.4;
+  overflow-x: hidden;
+}
+
+/* CRT scanlines overlay */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    rgba(0,255,0,0.05) 0,
+    rgba(0,255,0,0.05) 1px,
+    transparent 1px,
+    transparent 4px
+  );
+  z-index: 1;
+}
+
+/* Docsify app container */
+#app {
+  padding: 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+/* Main content card */
+.card {
+  background-color: #000;
+  border: 1px solid var(--muted);
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+  box-shadow: 0 4px 20px rgba(0,255,0,0.1);
+  animation: flicker 1.5s infinite steps(50);
+}
+
+/* Flicker animation for CRT feel */
+@keyframes flicker {
+  0%, 100% { opacity: 1; }
+  10% { opacity: 0.95; }
+  20% { opacity: 0.9; }
+  30% { opacity: 0.97; }
+  40% { opacity: 0.93; }
+  50% { opacity: 0.96; }
+  60% { opacity: 0.92; }
+  70% { opacity: 0.97; }
+  80% { opacity: 0.94; }
+  90% { opacity: 0.96; }
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text);
+  font-family: var(--mono);
+  text-shadow: 0 0 2px var(--text);
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+/* Paragraphs */
+p {
+  color: var(--text);
+  text-shadow: 0 0 1px var(--text);
+  margin-bottom: 1rem;
+}
+
+/* Markdown bold and italics */
+strong, b {
+  font-weight: bold;
+  color: var(--bold-text);
+  text-shadow: 0 0 2px var(--bold-text);
+}
+em, i {
+  font-style: italic;
+  color: var(--text);
+  text-shadow: 0 0 1px var(--text);
+}
+
+/* Links */
+a {
+  color: var(--text);
+  text-decoration: underline;
+}
+a:hover {
+  color: var(--muted);
+  text-shadow: 0 0 2px var(--text);
+  cursor: default;
+}
+
+/* Code and pre blocks */
+code, pre {
+  font-family: var(--mono);
+  background-color: #000;
+  color: var(--text);
+  border: 1px solid var(--muted);
+  padding: 0.2rem 0.4rem;
+  overflow-x: auto;
+  text-shadow: 0 0 1px var(--text);
+  font-weight: normal;
+}
+pre {
+  padding: 0.5rem;
+}
+
+/* Sidebar */
+.sidebar {
+  background-color: #000;
+  border-right: 2px solid var(--muted);
+  color: var(--text);
+  font-family: var(--mono);
+  font-size: 14px;
+  padding: 1rem;
+  line-height: 1.5;
+  overflow-y: auto;
+  position: relative;
+  z-index: 2;
+  animation: flicker 1.5s infinite steps(50);
+}
+
+/* Sidebar links */
+.sidebar a {
+  color: var(--text);
+  display: block;
+  padding: 2px 4px;
+  position: relative;
+  font-weight: bold;
+}
+
+/* Arrow pointers for DOS style */
+.sidebar a::before {
+  content: "> ";
+  color: var(--text);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+}
+
+/* Hover in sidebar */
+.sidebar a:hover {
+  background-color: #003300;
+  color: var(--text);
+  text-shadow: 0 0 2px var(--text);
+  cursor: default;
+}
+
+/* Active page in sidebar with blinking underscore */
+.sidebar .active a {
+  background-color: #003300;
+  font-weight: bold;
+  color: var(--text);
+  text-shadow: 0 0 2px var(--text);
+}
+.sidebar .active a::after {
+  content: "_";
+  color: var(--cursor);
+  animation: blink 1s step-start infinite;
+  margin-left: 0.2rem;
+}
+
+/* Nested sidebar */
+.sidebar ul {
+  padding-left: 1.2em;
+  list-style: none;
+}
+.sidebar ul li a::before {
+  content: "  - ";
+  color: var(--text);
+}
+
+/* Scrollbar for sidebar */
+.sidebar::-webkit-scrollbar {
+  width: 6px;
+  background: #000;
+}
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: var(--muted);
+  border-radius: 3px;
+}
+
+/* Blinking cursor for content */
+.blinking-cursor::after {
+  content: "_";
+  animation: blink 1s step-start infinite;
+}
+
+/* Footer */
+footer {
+  margin-top: 1.5rem;
+  font-size: 10px;
+  color: var(--muted);
+}
+
+/* Blinking animation */
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
+}
+
+/* Responsive */
+@media (max-width: 520px) {
+  h1 { font-size: 28px; }
+  .sidebar { font-size: 12px; }
+}
+
+#logo-container {
+  position: fixed;   /* stays on top-right while scrolling */
+  top: 10px;         /* adjust spacing */
+  right: 20px;
+  z-index: 1000;
+}
+
+#site-logo {
+  height: 150px;      /* adjust logo size */
+  width: auto;
+}

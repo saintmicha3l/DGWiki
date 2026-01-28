@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="img/favicon.ico">
+  <meta charset="UTF-8">
+  <title>Digital Gangster Wiki</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+  <script>
+    window.$docsify = {
+      name: 'DGWiki<br>clickme',
+      loadSidebar: true,
+      subMaxLevel: 0,
+      auto2top: true,
+    };
+  </script>
+
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/dark.css">
+  <link rel="stylesheet" href="dos.css">
+</head>
+<body>
+<div id="logo-container">
+  <img src="/img/logo.jpg" alt="DGWiki Logo" id="site-logo">
+</div>
+  
+  <div id="app"></div>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
+
+  <audio id="bg-audio" autoplay>
+  Your browser does not support the audio element.
+</audio>
+
+<script>
+  const tracks = [
+    'aud/Welcome to the Get Along Gang.mp3',
+    'aud/Still DG.mp3',
+    'aud/spamtec - im a dg.mp3',
+    'aud/except crime feat. dnz.mp3'
+  ];
+
+  let current = 0;
+  const audio = document.getElementById('bg-audio');
+
+  
+  audio.src = tracks[current];
+
+  audio.addEventListener('ended', () => {
+    current++;
+    if (current >= tracks.length) current = 0;
+    audio.src = tracks[current];
+    audio.play();
+  });
+</script>
+</body>
+</html>
