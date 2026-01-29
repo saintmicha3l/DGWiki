@@ -6,6 +6,7 @@
     - [Network Structure](/users/saintmichael/htb_academy/intro_to_networking/networking_structure/README.md)
     - [Network Workflow](/users/saintmichael/htb_academy/intro_to_networking/networking_workflow/README.md)
     - [Addressing](/users/saintmichael/htb_academy/intro_to_networking/addressing/README.md)
+    - [Protocols & Terms](/users/saintmichael/htb_academy/intro_to_networking/protocol_terms/README.md)
 - [Links]
     - [The Github](https://github.com/saintmicha3l/DGWiki)
     - [Digital Gangster OG](https://www.digitalgangster.com)
