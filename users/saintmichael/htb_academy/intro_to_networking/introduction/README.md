@@ -1,3 +1,1 @@
-# HackTheBox Academy
-
 View the Navbar for modules
