@@ -1,7 +1,7 @@
 - [Home](README.md)
 - [Users](users/README.md)
 - [HTB Academy]
-    - [Back](/users/saintmichael/htb_academy/README.md)
+    - [Back](/users/saintmichael/htb_academy/intro_to_networking/README.md)
     - [Networking Terms](/users/saintmichael/htb_academy/intro_to_networking/protocol_terms/networking_key_terminology.md)
     - [Common Protocols](/users/saintmichael/htb_academy/intro_to_networking/protocol_terms/common_protocols.md)
     - [Wireless Networks](/users/saintmichael/htb_academy/intro_to_networking/protocol_terms/wireless_networks.md)

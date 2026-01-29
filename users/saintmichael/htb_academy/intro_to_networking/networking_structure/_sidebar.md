@@ -1,7 +1,7 @@
 - [Home](README.md)
 - [Users](users/README.md)
 - [HTB Academy]
-    - [Back](/users/saintmichael/htb_academy/README.md)
+    - [Back](/users/saintmichael/htb_academy/intro_to_networking/README.md)
     - [Network Types](/users/saintmichael/htb_academy/intro_to_networking/networking_structure/network_types.md)
     - [Network Topos](/users/saintmichael/htb_academy/intro_to_networking/networking_structure/networking_topologies.md)
     - [Proxies](/users/saintmichael/htb_academy/intro_to_networking/networking_structure/proxies.md)

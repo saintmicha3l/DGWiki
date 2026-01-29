@@ -1,7 +1,7 @@
 - [Home](README.md)
 - [Users](users/README.md)
 - [HTB Academy]
-    - [Back](users/saintmichael/htb_academy/README.md)
+    - [Back](/users/saintmichael/htb_academy/intro_to_networking/README.md)
     - [Network Overview](/users/saintmichael/htb_academy/intro_to_networking/introduction/network_overview.md)
 - [Links]
     - [The Github](https://github.com/saintmicha3l/DGWiki)
