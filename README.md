@@ -18,6 +18,8 @@ The mission of DGWiki is simple: **preserve knowledge, document real work, and m
 DGWiki is **open to contributions via GitHub**.  
 Only **verified Digital Gangsters** are permitted to submit content. This requirement is non-negotiable.
 
+> Regarding DGs that are no longer with us, You may only create a page for them with specific approval from `saintmichael`. You MUST have known them personally in order to be able to create their page. This is a respect thing. It is non-negotiable.
+
 This site is maintained by saintmichael. You can find contact information on https://dg4e.net/c0ntact/ to verify your submission. In order to contribute, you must ATLEAST be a `whitelisted` member in the DG Discord.
 
 # DGWiki GitHub Stats
