@@ -2,6 +2,7 @@
 
 Select a user to view their DGWiki Profile:
 
+- [cross](/users/cross/readme.md)
 - [illy](/users/illy/README.md)
 - [maxx](/users/maxx/README.md)
 - [moscovium-mc](/users/moscovium-mc/README.md)
