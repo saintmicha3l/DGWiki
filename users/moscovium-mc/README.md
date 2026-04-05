@@ -27,11 +27,6 @@ I defend systems, networks, and data against exploitation, using curiosity, adve
 
 Security is just an illusion.  
 
-You can contact me here:  
-Matrix: @whitehats:unredacted.org
-
-Email: pub.inbox@proton.me
-
 ---
 
 ## PGP
